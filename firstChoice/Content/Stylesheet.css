@@ -1,0 +1,343 @@
+﻿body {
+    color: #0099cc;
+}
+
+.tab-pane {
+    color: #0099cc;
+}
+
+#navBar {
+    top: 0%;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white !important;
+}
+
+#login {
+    top: 15%;
+    width: 40%;
+    height: 30%;
+    left: 30%;
+    position: absolute;
+    font-size: 20px;
+}
+
+#buttonsPanel {
+    top: 15%;
+    width: 20%;
+    height: 10%;
+    left: 10%;
+    position: absolute;
+    font-size: 20px;
+}
+
+#manual {
+    top: 15%;
+    width: 20%;
+    height: 50%;
+    left: 70%;
+    position: absolute;
+    font-size: 16px;
+}
+
+#recent::-webkit-scrollbar {
+    width: 12px;
+    visibility: hidden;
+}
+
+#recent::-webkit-scrollbar-track {
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#recent::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#recent::-webkit-scrollbar :hover {
+    width: 12px;
+    visibility: visible;
+}
+
+#recent::-webkit-scrollbar-track:hover {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    visibility: visilble;
+}
+
+#recent::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    visibility: visible;
+}
+
+.tblResults::-webkit-scrollbar {
+    width: 12px;
+    visibility: visible;
+}
+
+.tblResults::-webkit-scrollbar-track {
+    border-radius: 10px;
+    visibility: visible;
+}
+
+.tblResults::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    visibility: visible;
+}
+
+.tblResults::-webkit-scrollbar :hover {
+    width: 12px;
+    visibility: visible;
+}
+
+.tblResults::-webkit-scrollbar-track:hover {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    visibility: visilble;
+}
+
+.tblResults::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    visibility: visible;
+}
+
+#postsmsg::-webkit-scrollbar {
+    width: 12px;
+    visibility: hidden;
+}
+
+#postsmsg::-webkit-scrollbar-track {
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#postsmsg::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#postsmsg::-webkit-scrollbar :hover {
+    width: 12px;
+    visibility: visible;
+}
+
+#postsmsg::-webkit-scrollbar-track:hover {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    visibility: visible;
+}
+
+#postsmsg::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    visibility: visible;
+}
+
+#notices {
+    top: 25%;
+    width: 20%;
+    height: 40%;
+    left: 10%;
+    position: absolute;
+    font-size: 20px;
+}
+
+#recentPosts {
+    top: 25%;
+    width: 20%;
+    height: 40%;
+    left: 10%;
+    position: absolute;
+    font-size: 16px;
+}
+
+#recent {
+    top: 8%;
+    width: 100%;
+    height: 89%;
+    left: 0%;
+    position: relative;
+    font-size: 16px;
+    overflow: auto;
+}
+
+#postsmsg {
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    font-size: 16px;
+    height: 50%;
+    overflow: auto;
+}
+
+#info {
+    top: 15%;
+    width: 30%;
+    height: 25%;
+    left: 35%;
+    position: absolute;
+    font-size: 20px;
+    color: #0099cc;
+}
+
+#questionBox {
+    top: 10%;
+    width: 60%;
+    height: 40%;
+    left: 20%;
+    position: absolute;
+    font-size: 18px;
+    color: #0099cc;
+}
+
+.mainBox {
+    top: 10%;
+    width: 60%;
+    left: 20%;
+    position: absolute;
+    font-size: 18px;
+    color: #0099cc;
+}
+
+.questions {
+    width: 60%;
+    height: 40%;
+    left: 20%;
+    position: absolute;
+    font-size: 18px;
+    color: #0099cc;
+}
+
+.alert {
+    font-size: 14px;
+}
+
+#btnSubmit {
+    left: 20%;
+    position: absolute;
+    width: 60%;
+}
+
+#info2 {
+    top: 45%;
+    width: 30%;
+    height: 20%;
+    left: 35%;
+    position: absolute;
+    font-size: 20px;
+    color: #0099cc;
+}
+
+#adminContent {
+    top: 15%;
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    position: absolute;
+    font-size: 20px;
+}
+
+.menuOption {
+    width: 20%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    #navBar {
+        visibility: hidden;
+    }
+
+    #login {
+        top: 10%;
+        width: 80%;
+        height: 80%;
+        left: 10%;
+        position: absolute;
+        font-size: 20px;
+        color: #0099cc;
+    }
+
+    #buttonsPanel {
+        top: 160%;
+        width: 80%;
+        height: 30%;
+        left: 10%;
+        position: absolute;
+        font-size: 20px;
+    }
+
+    #manual {
+        top: 190%;
+        width: 80%;
+        height: 70%;
+        left: 10%;
+        position: absolute;
+        font-size: 14px;
+    }
+
+    #notices {
+        top: 265%;
+        width: 80%;
+        height: 70%;
+        left: 10%;
+        position: absolute;
+        font-size: 20px;
+    }
+
+    #calculator {
+        top: 265%;
+        width: 80%;
+        height: 70%;
+        left: 10%;
+        position: absolute;
+        font-size: 20px;
+    }
+
+    #info {
+        top: 10%;
+        width: 80%;
+        height: 80%;
+        left: 10%;
+        position: absolute;
+        font-size: 20px;
+        color: #0099cc;
+    }
+
+    #questionBox {
+        top: 10%;
+        width: 60%;
+        height: 60%;
+        left: 20%;
+        position: absolute;
+        font-size: 18px;
+        color: #0099cc;
+    }
+
+    #info2 {
+        top: 95%;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        position: absolute;
+        font-size: 20px;
+        color: #0099cc;
+    }
+
+    #adminContent {
+        top: 15%;
+        width: 70%;
+        height: 60%;
+        left: 15%;
+        position: absolute;
+        font-size: 20px;
+    }
+
+    .menuOption {
+        width: 20%;
+        text-align: center;
+    }
+}
