@@ -48,8 +48,7 @@ namespace firstChoice.Models
         }
         public void unzipFile(string sourcePath)
         {
-            Random random = new Random();
-            string extractToPath = "C:\\Users\\Sofya.SHAJI-DOMAIN\\Documents\\Visual Studio 2017\\Projects\\firstChoice\\firstChoice\\ExtractedFiles\\" + "Folder" + random.Next(1, 100000000);
+            string extractToPath = "C:\\Users\\Sofya.SHAJI-DOMAIN\\Documents\\Visual Studio 2017\\Projects\\firstChoice\\firstChoice\\ExtractedFiles\\" + "Folder" + Common.random.Next(1, 1000000000);
             ZipFile.ExtractToDirectory(sourcePath, extractToPath);
             xmlDoc = new XmlDocument();
             xmlDoc.Load(extractToPath + "\\word\\document.xml");

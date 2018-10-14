@@ -30,7 +30,7 @@ namespace firstChoice.Models
             sqlCommand = new SqlCommand(storedProcedure, sqlConnection);
             sqlCommand.CommandType = CommandType.StoredProcedure;
         }
-        public void storeAssessment(string title, string moduleID, int percentageWorth, int duration, string lecturerID)
+        public void storeAssessment(string title, string moduleID, int percentageWorth, int duration, string lecturerID, ref int newAssessmentID)
         {
             setupStoredProcedure("storeAssessment");
             sqlCommand.Parameters.AddWithValue("@title", title);
@@ -38,7 +38,12 @@ namespace firstChoice.Models
             sqlCommand.Parameters.AddWithValue("@percentageWorth", percentageWorth);
             sqlCommand.Parameters.AddWithValue("@duration", duration);
             sqlCommand.Parameters.AddWithValue("@lecturerID", lecturerID);
-            sqlCommand.ExecuteNonQuery();
+            reader = sqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                newAssessmentID = Convert.ToInt32(reader.GetValue(0));
+            }
+            reader.Close();
             sqlConnection.Close();
         }
         public void storeQuestion(string questionID, string question, int assessmentID, int questionNumber)
@@ -66,7 +71,7 @@ namespace firstChoice.Models
         public List<Assessment> getAssessmentByLecturerID(string lecturerID)
         {
             List<Assessment> assessments = new List<Assessment>();
-            setupStoredProcedure("getAssessmentByLecturerID");
+            setupStoredProcedure("getAssessmentBySingleColumnValue");
             sqlCommand.Parameters.AddWithValue("@lecturerID",lecturerID);
             reader = sqlCommand.ExecuteReader();
             while(reader.Read())
